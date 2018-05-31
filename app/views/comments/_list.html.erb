@@ -1,0 +1,5 @@
+<ul id="comments_list_<%=@memo.id%>">
+<% if @memo.comments.size > 0 %>
+<%= render @memo.comments %>
+<% end %>
+</ul>

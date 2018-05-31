@@ -1,0 +1,6 @@
+<% if @comment.errors.size == 0 %>
+  $('<%=j render @comment %>').appendTo($("#comments_list_<%=@memo.id %>")).hide().fadeIn('fast');
+  $("#comments_form_<%=@memo.id %> form")[0].reset();
+<% else %>
+  alert("저장할게 없구만요 ;;");
+<% end %>

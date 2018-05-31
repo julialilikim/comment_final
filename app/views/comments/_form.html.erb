@@ -1,0 +1,10 @@
+<div id="comments_form_<%=comment.memo.id%>">
+    <%= simple_form_for([comment.memo, comment], remote: true ) do |f| %>
+    <div class='form-inputs'>
+      <%= f.input :body, label: false, placeholder: '욕설이나 비방은 삼가주세요ㅜㅜ', input_html: { rows: 5 } %>
+    </div>
+    <div class='form-actions'>
+      <%= f.button :submit %>
+    </div>
+    <% end %>
+</div>
